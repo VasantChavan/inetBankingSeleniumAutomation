@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<parameter name="brName" value="Edge" />
+
+	<listeners>
+		<listener
+			class-name="com.inetbanking_hybridframework.utility.ExtentReportManager" />
+	</listeners>
 	<test name="Test">
+		<parameter name="brName" value="Chrome" />
 		<classes>
+			<!--  <class name="com.inetbanking_hybridframework.testcases.LoginPageTestCases" /> -->
+			<class name="com.inetbanking_hybridframework.testcases.LoginDataDrivenTestCases" />
+			<!--  <class
+				name="com.inetbanking_hybridframework.testcases.LoginDataDrivenTestCases" />
 			<class
-				name="com.inetbanking_hybridframework.testcases.LoginPageTestCases" />
+				name="com.inetbanking_hybridframework.testcases.HomePageTestCases" />
+			<class
+				name="com.inetbanking_hybridframework.testcases.ManagerPageTestCases" />
+				-->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

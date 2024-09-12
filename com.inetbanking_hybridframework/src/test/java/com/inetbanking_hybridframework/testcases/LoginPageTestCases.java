@@ -1,19 +1,22 @@
 package com.inetbanking_hybridframework.testcases;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.inetbanking_hybridframework.testbase.TestBase;
-import com.inetbanking_hybridframework.utility.Helper;
 
+@Listeners(com.inetbanking_hybridframework.utility.ExtentReportManager.class)
 public class LoginPageTestCases extends TestBase {
 
 	@Test(priority = 1)
 	public void validateLoginPageTitle() {
-		// String expTitle="Guru99 Bank Home Page";
-		// String actTitle =driver.getTitle();
+		 String expTitle="Guru99 Bank Home Page";
+		 String actTitle =driver.getTitle();
 
-		Assert.assertEquals(driver.getTitle(), configDataProvider.seachKey("lpTitle"));
+		//Assert.assertEquals(driver.getTitle(), configDataProvider.seachKey("lpTitle"));
+		
+		Assert.assertEquals(actTitle,expTitle);
 	}
 
 	@Test(priority = 2)
@@ -32,6 +35,7 @@ public class LoginPageTestCases extends TestBase {
 		// String actTitle=driver.getTitle();
 		
 		//Helper.handleAlert(driver);
+		System.out.println(configDataProvider.seachKey("hmTitle"));
 
 		Assert.assertEquals(driver.getTitle(), configDataProvider.seachKey("hmTitle"));
 

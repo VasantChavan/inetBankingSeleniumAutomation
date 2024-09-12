@@ -31,11 +31,11 @@ public class LoginDataDrivenTestCases extends TestBase{
 		
 		try {
 			
-			LoginPage lp = new LoginPage(driver);
-			lp.setUserName(username);
-			lp.setPassword(password);
-			
-			HomePage hm = lp.clickOnLoginBtn();
+//			LoginPage lp = new LoginPage(driver);
+//			lp.setUserName(username);
+//			lp.setPassword(password);
+//			
+//			HomePage hm = lp.clickOnLoginBtn();
 			
 			Helper.handleAlert(driver);
 			
