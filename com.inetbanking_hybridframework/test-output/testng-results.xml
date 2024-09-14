@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-12T10:29:53 IST" name="Default suite" finished-at="2024-09-12T10:30:18 IST" duration-ms="24349">
+  <suite started-at="2024-09-14T12:34:27 IST" name="Suite" finished-at="2024-09-14T12:34:50 IST" duration-ms="23860">
     <groups>
     </groups>
-    <test started-at="2024-09-12T10:29:53 IST" name="Default test" finished-at="2024-09-12T10:30:18 IST" duration-ms="24349">
-      <class name="com.inetbanking_hybridframework.testcases.LoginPageTestCases">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@75d3a5e0]" started-at="2024-09-12T10:29:53 IST" name="init" finished-at="2024-09-12T10:29:53 IST" duration-ms="28" status="PASS">
+    <test started-at="2024-09-14T12:34:27 IST" name="Test" finished-at="2024-09-14T12:34:50 IST" duration-ms="23860">
+      <class name="com.inetbanking_hybridframework.testcases.HomePageTestCases">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.inetbanking_hybridframework.testcases.HomePageTestCases@53045c6c]" started-at="2024-09-14T12:34:26 IST" name="init" finished-at="2024-09-14T12:34:27 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@75d3a5e0]" started-at="2024-09-12T10:29:54 IST" name="setup" finished-at="2024-09-12T10:30:14 IST" duration-ms="20444" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking_hybridframework.testcases.HomePageTestCases@53045c6c]" started-at="2024-09-14T12:34:27 IST" name="setup" finished-at="2024-09-14T12:34:46 IST" duration-ms="18846" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialisePageObjects()[pri:0, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@75d3a5e0]" started-at="2024-09-12T10:30:14 IST" name="initialisePageObjects" finished-at="2024-09-12T10:30:17 IST" duration-ms="2360" status="PASS">
+        <test-method is-config="true" signature="initialisePageObjects()[pri:0, instance:com.inetbanking_hybridframework.testcases.HomePageTestCases@53045c6c]" started-at="2024-09-14T12:34:46 IST" name="initialisePageObjects" finished-at="2024-09-14T12:34:47 IST" duration-ms="1245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisePageObjects -->
-        <test-method signature="validateLoginPageTitle()[pri:1, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@75d3a5e0]" started-at="2024-09-12T10:30:17 IST" name="validateLoginPageTitle" finished-at="2024-09-12T10:30:17 IST" duration-ms="70" status="FAIL">
+        <test-method signature="logoutFunctionality()[pri:0, instance:com.inetbanking_hybridframework.testcases.HomePageTestCases@53045c6c]" started-at="2024-09-14T12:34:47 IST" name="logoutFunctionality" finished-at="2024-09-14T12:34:48 IST" duration-ms="1449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetbanking_hybridframework.testcases.HomePageTestCases@53045c6c]" started-at="2024-09-14T12:34:50 IST" name="teardown" finished-at="2024-09-14T12:34:50 IST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.inetbanking_hybridframework.testcases.HomePageTestCases -->
+      <class name="com.inetbanking_hybridframework.testcases.LoginPageTestCases">
+        <test-method is-config="true" signature="initialisePageObjects()[pri:0, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@53fb3dab]" started-at="2024-09-14T12:34:48 IST" name="initialisePageObjects" finished-at="2024-09-14T12:34:49 IST" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialisePageObjects -->
+        <test-method signature="validateLoginPageTitle()[pri:1, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@53fb3dab]" started-at="2024-09-14T12:34:49 IST" name="validateLoginPageTitle" finished-at="2024-09-14T12:34:49 IST" duration-ms="20" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Guru99 Bank Home Page] but found [Guru99 Bank Manager HomePage]]]>
@@ -39,7 +53,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.inetbanking_hybridframework.testcases.LoginPageTestCases.validateLoginPageTitle(LoginPageTestCases.java:19)
+at com.inetbanking_hybridframework.testcases.LoginPageTestCases.validateLoginPageTitle(LoginPageTestCases.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,15 +88,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginPageTitle -->
-        <test-method signature="validateLoginFunctionality()[pri:2, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@75d3a5e0]" started-at="2024-09-12T10:30:17 IST" name="validateLoginFunctionality" finished-at="2024-09-12T10:30:17 IST" duration-ms="24" status="PASS">
+        <test-method signature="validateLoginFunctionality()[pri:2, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@53fb3dab]" started-at="2024-09-14T12:34:50 IST" name="validateLoginFunctionality" finished-at="2024-09-14T12:34:50 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginFunctionality -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetbanking_hybridframework.testcases.LoginPageTestCases@75d3a5e0]" started-at="2024-09-12T10:30:17 IST" name="teardown" finished-at="2024-09-12T10:30:18 IST" duration-ms="766" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
       </class> <!-- com.inetbanking_hybridframework.testcases.LoginPageTestCases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

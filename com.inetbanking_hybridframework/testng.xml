@@ -9,15 +9,14 @@
 	<test name="Test">
 		<parameter name="brName" value="Chrome" />
 		<classes>
-			<!--  <class name="com.inetbanking_hybridframework.testcases.LoginPageTestCases" /> -->
-			<class name="com.inetbanking_hybridframework.testcases.LoginDataDrivenTestCases" />
-			<!--  <class
-				name="com.inetbanking_hybridframework.testcases.LoginDataDrivenTestCases" />
-			<class
-				name="com.inetbanking_hybridframework.testcases.HomePageTestCases" />
-			<class
-				name="com.inetbanking_hybridframework.testcases.ManagerPageTestCases" />
-				-->
+			<class name="com.inetbanking_hybridframework.testcases.HomePageTestCases" />
+			 <class name="com.inetbanking_hybridframework.testcases.LoginPageTestCases"/> 
+				
+			<!-- <class name="com.inetbanking_hybridframework.testcases.LoginDataDrivenTestCases" 
+				/> -->
+			<!-- <class name="com.inetbanking_hybridframework.testcases.LoginDataDrivenTestCases" 
+				/> <class name="com.inetbanking_hybridframework.testcases.ManagerPageTestCases" 
+				/> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

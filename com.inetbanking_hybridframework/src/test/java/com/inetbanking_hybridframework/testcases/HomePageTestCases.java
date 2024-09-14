@@ -3,8 +3,6 @@ package com.inetbanking_hybridframework.testcases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.inetbanking_hybridframework.pageobjects.HomePage;
-import com.inetbanking_hybridframework.pageobjects.LoginPage;
 import com.inetbanking_hybridframework.testbase.TestBase;
 import com.inetbanking_hybridframework.utility.Helper;
 

@@ -1,13 +1,22 @@
 package com.inetbanking_hybridframework.utility;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
+
 import org.openqa.selenium.WebDriver;
 
 public class Helper {
 
 	
 	
+	
+	public static String getTimeStamp()
+	{
+		return new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss").format(new Date());
+	}
 	public static void handleAlert(WebDriver driver)
 	{
 		if(isAlertPreset(driver))
@@ -31,10 +40,36 @@ public class Helper {
 			return true;
 			
 		} catch (NoAlertPresentException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
 			return false;
 		}
 		
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

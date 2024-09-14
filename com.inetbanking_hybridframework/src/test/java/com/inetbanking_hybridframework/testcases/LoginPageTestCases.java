@@ -11,17 +11,18 @@ public class LoginPageTestCases extends TestBase {
 
 	@Test(priority = 1)
 	public void validateLoginPageTitle() {
-		 String expTitle="Guru99 Bank Home Page";
-		 String actTitle =driver.getTitle();
+		String actTitle = driver.getTitle();
+		String expTitle = "Guru99 Bank Home Page";
 
-		//Assert.assertEquals(driver.getTitle(), configDataProvider.seachKey("lpTitle"));
-		
-		Assert.assertEquals(actTitle,expTitle);
+		// Assert.assertEquals(driver.getTitle(),
+		// configDataProvider.seachKey("lpTitle"));
+
+		Assert.assertEquals(actTitle, expTitle);
 	}
 
 	@Test(priority = 2)
 	public void validateLoginFunctionality() {
-		//LoginPage lp = new LoginPage(driver);
+		// LoginPage lp = new LoginPage(driver);
 
 //		lp.setUserName("mngr587631");
 //		lp.setPassword("dEmugEs");
@@ -33,8 +34,8 @@ public class LoginPageTestCases extends TestBase {
 
 		// String expTitle="Guru99 Bank Manager HomePage";
 		// String actTitle=driver.getTitle();
-		
-		//Helper.handleAlert(driver);
+
+		// Helper.handleAlert(driver);
 		System.out.println(configDataProvider.seachKey("hmTitle"));
 
 		Assert.assertEquals(driver.getTitle(), configDataProvider.seachKey("hmTitle"));

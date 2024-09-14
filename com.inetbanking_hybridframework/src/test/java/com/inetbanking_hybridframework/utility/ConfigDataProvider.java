@@ -34,7 +34,6 @@ public class ConfigDataProvider {
 
 	public String seachKey(String key) {
 		return prop.getProperty(key);
-
 	}
 	
 	

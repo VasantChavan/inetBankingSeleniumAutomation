@@ -7,15 +7,6 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="brName" value="Chrome"/>
     <classes>
-      <class name="com.inetbanking_hybridframework.testcases.LoginDataDrivenTestCases">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="validateLoginFunctionalityWithValidnAndInvalidDataSet"/>
-          <include name="initialisePageObjects"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.inetbanking_hybridframework.testcases.LoginDataDrivenTestCases -->
       <class name="com.inetbanking_hybridframework.testcases.LoginPageTestCases">
         <methods>
           <include name="setup"/>
